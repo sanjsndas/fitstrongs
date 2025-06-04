@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact Us - FitStrong Training</title>
+<style>
+  :root {
+    --primary-color: #2c3e50;
+    --secondary-color: #27ae60;
+    --background-color: #f4f6f8;
+    --text-color: #333;
+    --footer-bg-color: #2c3e50;
+    --footer-text-color: white;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.7;
+    padding: 2rem;
+  }
+  h1, h2, h3 {
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 4px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+  }
+  nav a {
+    margin-left: 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    text-align: justify;
+  }
+  ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+  li {
+    margin-bottom: 0.5rem;
+  }
+  a {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  form {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 700px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+  }
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+  }
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 700;
+  }
+  button:hover {
+    background-color: #225f3d;
+  }
+  address {
+    font-style: normal;
+    line-height: 1.5;
+    margin-top: 2rem;
+    max-width: 700px;
+    color: var(--primary-color);
+  }
+  footer {
+    margin-top: 4rem;
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    font-size: 1rem;
+  }
+  /* Responsive */
+  @media (max-width: 600px) {
+    body {
+      padding: 1rem;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    form {
+      padding: 1.5rem;
+      margin-top: 1rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    button {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+    <a href="index.html">Back To Home</a>
+    </nav>
+  </header>
+  <center><h1>FitStrong Training</h1></center>
+  <h1>Contact FitStrong Training</h1>
+  <p>We value communication and are here to assist you with any inquiries, feedback, or support needs related to our fitness programs and services. Whether you want to learn more about our training options, need help with scheduling, or have questions about membership and pricing, our dedicated team is eager to help.</p>
+
+  <h2>How to Reach Us</h2>
+  <p>There are several convenient ways to get in touch with the FitStrong Training team. You can call us directly during business hours, send an email at any time, or use the contact form below to send us a message. For in-person visits, our facility welcomes visitors and prospective clients by appointment.</p>
+
+  <h3>Phone Support</h3>
+  <p>Call us at (800) 333-2244. Our phone lines are open Monday through Friday from 8 AM to 8 PM, and on Saturdays from 9 AM to 4 PM. During these hours, a knowledgeable customer service representative will assist you with your questions or connect you with the appropriate trainer or staff member.</p>
+
+  <h3>Email Support</h3>
+  <p>Send your inquiries to <a href="mailto:info@fitstrongtraining.com">info@fitstrongtraining.com</a>. We strive to respond to email communications within 24 hours during business days. For urgent matters, we recommend calling our support team directly.</p>
+
+  <h3>Contact Form</h3>
+  <p>Please use the form below for general questions, feedback, or specific requests. Providing complete and clear information helps us respond quickly and accurately.</p>
+  <form id="contact-form" aria-label="Contact form">
+    <label for="name">Full Name *</label>
+    <input type="text" id="name" name="name" placeholder="Your full name" required minlength="2" />
+
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone" name="phone" placeholder="(Optional) Your phone number" pattern="^[\d\s\-\+\(\)]*$" title="Only numbers, spaces, hyphens, parentheses, and plus signs are allowed" />
+
+    <label for="message">Message *</label>
+    <textarea id="message" name="message" placeholder="Write your message here..." required minlength="10"></textarea>
+
+    <button type="submit" aria-label="Send message to FitStrong Training">Send Message</button>
+  </form>
+
+  <h2>Our Commitment to You</h2>
+  <p>When you reach out, you can expect professionalism, respect, and prompt assistance. We understand that choosing a fitness training program is a personal decision, and we're here to provide you with all the information you need to make the best choice for your health and lifestyle.</p>
+
+  <h2>Common Inquiries We Receive</h2>
+  <ul>
+    <li>Details about personal training and group class schedules</li>
+    <li>Membership plans, pricing, and promotions</li>
+    <li>Facility information and safety protocols</li>
+    <li>Fitness goal guidance and program recommendations</li>
+    <li>Event registrations and workshop information</li>
+    <li>Technical support for our online resources</li>
+  </ul>
+
+  <h2>Visits & Appointments</h2>
+  <p>If you would like to visit our facility for a tour, consultation, or trial session, please contact us to schedule an appointment. This helps us prepare to give you the best experience and ensure that our trainers are available to meet with you.</p>
+
+  <h2>Feedback and Testimonials</h2>
+  <p>Your opinion matters to us! If you have experienced our training services and would like to share your feedback or testimonials, please contact us through this page. Your reviews help us continually improve and inspire others to pursue fitness and wellness.</p>
+
+  <h2>Privacy and Confidentiality</h2>
+  <p>We take your privacy seriously. Any personal information you provide through this contact form or communication channels is handled securely and only used to assist you with your requests. For more details, please see our <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <address>
+    <strong>FitStrong Training Headquarters</strong><br />
+    East 14th Street,<br />
+    New York, NY 10003, United States<br />
+    Phone: (800) 333-2244<br />
+    Email: <a href="mailto:info@fitstrongtraining.com">info@fitstrongtraining.com</a>
+  </address>
+
+  <footer>
+    <p>FitStrong Training Headquarters | East 14th Street, New York, NY 10003, United States | Phone: (800) 333-2244</p>
+  </footer>
+
+<script>
+  // Basic client-side form validation and submission placeholder
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    // Normally form data would be sent to a server here.
+    alert('Thank you for reaching out! We have received your message and will get back to you shortly.');
+    this.reset();
+  });
+</script>
+</body>
+</html>
